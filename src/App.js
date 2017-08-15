@@ -1,6 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
+
+import styled from 'styled-components'
+
+const DisplayBox = styled.div`
+  margin: 1em;
+  padding: 2em;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: left;
+`
 
 class App extends Component {
   render() {
@@ -10,12 +21,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <DisplayBox>Graph component goes here</DisplayBox>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
